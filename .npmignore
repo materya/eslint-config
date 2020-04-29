@@ -1,0 +1,10 @@
+src
+test
+tsconfig.*
+.eslintrc.js
+.editorconfig
+Makefile
+node_modules
+coverage
+.nyc_output
+*.log

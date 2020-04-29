@@ -1,0 +1,50 @@
+{
+  "name": "@materya/eslint-plugin",
+  "description": "An opinionated ESLint Config for Materya Projects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "homepage": "https://github.com/materya/eslint-config",
+  "url": "https://github.com/materya/eslint-config",
+  "email": "Sylver <sylv3r@materya.io>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/materya/eslint-config.git"
+  },
+  "author": "Sylver <sylv3r@materya.io>",
+  "bugs": {
+    "url": "https://github.com/materya/eslint-config/issues"
+  },
+  "license": "GPL-3.0",
+  "keywords": [
+    "eslint",
+    "config",
+    "materya"
+  ],
+  "scripts": {
+    "test": "eslint .",
+    "release": "standard-version"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npm t"
+    ]
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsdoc": "^22.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "eslint": "^6.8.0",
+    "standard-version": "^6.0.1",
+    "typescript": "^3.8.3"
+  }
+}
