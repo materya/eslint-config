@@ -23,6 +23,7 @@ module.exports = {
     'array-element-newline': ['error', 'consistent'],
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: false }],
     camelcase: ['off', { ignoreDestructuring: true }],
+    'eol-last': ['error', 'always'],
     'max-len': ['error', {
       code: 79,
       comments: 79,
