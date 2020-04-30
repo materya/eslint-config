@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    require.resolve('./common.js'),
+    './index.js',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
   ],

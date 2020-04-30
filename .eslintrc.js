@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['./configs/common.js'],
+  extends: ['./index.js'],
 }
