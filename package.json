@@ -22,7 +22,7 @@
     "materya"
   ],
   "scripts": {
-    "postinstall": "npx install-peerdeps -d -o eslint-config-materya",
+    "postinstall": "./scripts/postinstall.sh",
     "release": "standard-version",
     "test": "eslint ."
   },
