@@ -18,7 +18,9 @@ npx install-peerdeps -d -o eslint-config-materya
 
 ### Configure ESLint
 
-In your eslint config file (`.eslintrc`, `.eslintrc.js`, `.eslintrc.yml`, ...)
+Extends from this config in your eslint local config file.
+
+Example in `.eslintrc`:
 
 ```js
 module.exports = {
@@ -33,5 +35,15 @@ module.exports = {
 ```
 
 ## Rules
+
+### Dependencies
+
+This set of rules extends a few standards:
+
+* [AirBNB Javascript guidelines](https://github.com/airbnb/javascript)
+* [ESLint Standard Style](https://github.com/standard/eslint-config-standard)
+* [ESLint Import Plugin](https://github.com/benmosher/eslint-plugin-import)
+
+### Custom rules
 
 > WIP
