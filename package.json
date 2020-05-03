@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-materya",
   "description": "An opinionated ESLint Config for Materya Projects",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "main": "index.js",
   "homepage": "https://github.com/materya/eslint-config",
   "url": "https://github.com/materya/eslint-config",
@@ -22,7 +22,7 @@
     "materya"
   ],
   "scripts": {
-    "release": "standard-version",
+    "release": "standard-version -s",
     "test": "eslint ."
   },
   "husky": {
