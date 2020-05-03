@@ -11,15 +11,17 @@
   },
   "eslint.validate": [
     "javascript",
+    "typescript"
   ],
+  "javascript.format.enable": false,
+  "typescript.format.enable": false,
+  "eslint.format.enable": true,
   "editor.formatOnSave": true,
   "files.associations": {
     ".env.defaults": "shellscript",
+    ".nycrc": "json",
   },
   "material-icon-theme.files.associations": {
     ".env.defaults": "tune",
-  },
-  "[javascript]": {
-    "editor.formatOnSave": true
   },
 }
