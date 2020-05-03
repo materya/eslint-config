@@ -39,7 +39,6 @@ module.exports = {
     }],
     semi: ['error', 'never'],
     'space-before-function-paren': ['error', 'always'],
-    'template-tag-spacing': ['error', 'always'],
 
     // plugin:import
     'import/extensions': 'off',
