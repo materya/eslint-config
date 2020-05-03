@@ -9,7 +9,19 @@ module.exports = {
     '@typescript-eslint',
     'import',
   ],
+  overrides: [
+    // Enable rules specifically for Typescript files
+    {
+      files: ['*.ts'],
+      rules: {
+        '@typescript-eslint/explicit-function-return-type': ['error'],
+      },
+    },
+  ],
   rules: {
+    // Disable rules for a mixed js/ts codebase - see `overrides` parameter
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    // Common rules
     '@typescript-eslint/member-delimiter-style': ['error', {
       multiline: { delimiter: 'none' },
       singleline: { delimiter: 'semi', requireLast: false },
