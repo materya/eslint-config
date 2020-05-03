@@ -2,20 +2,21 @@
 
 PM = npm
 
-PRERELEASE_FLAG ?= beta
+PRERELEASE_TAG ?= beta
+PUBLISH_FLAGS = publish --access public
 
-modules = node_modules
+MODULES = node_modules
 
 .PHONY: all
 all:
 	@echo "Nothing to build"
 
-$(modules):
+$(MODULES):
 	$(PM) i
 
 .PHONY: clean
 clean:
-	rm -rf $(modules)
+	rm -rf $(MODULES)
 
 .PHONY: test
 test:
@@ -23,12 +24,17 @@ test:
 
 .PHONY: release
 release:
+ifneq (,$(findstring n,$(MAKEFLAGS)))
+	+$(PM) run release -- --dry-run
+	+$(PM) $(PUBLISH_FLAGS) --dry-run
+else
 	$(PM) run release
 	git push --follow-tags origin master
-	npm publish --access public
+	$(PM) $(PUBLISH_FLAGS)
+endif
 
 .PHONY: prerelease
 prerelease:
-	$(PM) run release -- --prerelease $(PRERELEASE_FLAG)
+	$(PM) run release -- --prerelease $(PRERELEASE_TAG)
 	git push --follow-tags origin master
-	npm publish --tag prerelease --access public
+	$(PM) $(PUBLISH_FLAGS) --tag prerelease
