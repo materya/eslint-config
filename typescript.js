@@ -19,8 +19,10 @@ module.exports = {
       },
     },
   ],
-  jsdoc: {
-    mode: 'typescript',
+  settings: {
+    jsdoc: {
+      mode: 'typescript',
+    },
   },
   rules: {
     // Disable rules for a mixed js/ts codebase - see `overrides` parameter
