@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/materya/eslint-config/compare/v2.4.1...v3.0.0) (2020-05-04)
+
+
+### Bug Fixes
+
+* **typescript:** configure jsdoc for typescript ([2b0a70d](https://github.com/materya/eslint-config/commit/2b0a70d))
+
+
+### Features
+
+* **typescript:** add missing eslint-recommended ([c00f84d](https://github.com/materya/eslint-config/commit/c00f84d))
+
+
+### BREAKING CHANGES
+
+* **typescript:** add @typescript-eslint/eslint-recommended rules
+
+
+
 ### [2.4.1](https://github.com/materya/eslint-config/compare/v2.4.0...v2.4.1) (2020-05-03)
 
 
