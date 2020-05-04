@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     './index.js',
+    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
   ],
