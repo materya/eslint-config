@@ -17,6 +17,7 @@ module.exports = {
   },
   plugins: [
     'import',
+    'jsdoc',
   ],
   root: true,
   rules: {

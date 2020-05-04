@@ -19,6 +19,9 @@ module.exports = {
       },
     },
   ],
+  jsdoc: {
+    mode: 'typescript',
+  },
   rules: {
     // Disable rules for a mixed js/ts codebase - see `overrides` parameter
     '@typescript-eslint/explicit-function-return-type': 'off',
