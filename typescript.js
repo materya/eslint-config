@@ -33,7 +33,8 @@ module.exports = {
       singleline: { delimiter: 'semi', requireLast: false },
     }],
     '@typescript-eslint/no-unused-vars': ['error', {
-      varsIgnorePattern: '^\\$',
+      varsIgnorePattern: '^_',
+      argsIgnorePattern: '^_',
     }],
     'import/named': 'off', // Does not work well with TS
   },
