@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/materya/eslint-config/compare/v3.0.1...v4.0.0) (2020-05-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* `no-unused-vars` rule configuration
+
+### Features
+
+* Change `no-unused-vars` rule configuration ([c8c7100](https://github.com/materya/eslint-config/commit/c8c7100b0ad979506d1d88e76b0cf310f0cf1057))
+
+
+### Bug Fixes
+
+* **dev-deps:** update devDependencies ([214c12d](https://github.com/materya/eslint-config/commit/214c12d051eef8194e31764362bb5ae01514107c))
+
 ### [3.0.1](https://github.com/materya/eslint-config/compare/v3.0.0...v3.0.1) (2020-05-04)
 
 
