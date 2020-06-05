@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.0.1](https://github.com/materya/eslint-config/compare/v5.0.0...v5.0.1) (2020-06-05)
+
+
+### Bug Fixes
+
+* **no-unused-vars:** bad pattern escape ([75fec82](https://github.com/materya/eslint-config/commit/75fec82b7ea9c9ddc7c09734fbae337ceb55c512))
+
 ## [5.0.0](https://github.com/materya/eslint-config/compare/v4.0.0...v5.0.0) (2020-06-05)
 
 
