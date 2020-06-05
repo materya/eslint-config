@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/materya/eslint-config/compare/v4.0.0...v5.0.0) (2020-06-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* **no-unused-vars:** revert ignore pattern
+
+### Features
+
+* **max-len:** less restriction on line length ([5895d52](https://github.com/materya/eslint-config/commit/5895d5244aaf03018be804b79f3309a5a4ed6218))
+* **no-unused-vars:** revert ignore pattern ([b6acacf](https://github.com/materya/eslint-config/commit/b6acacf295456ca2549e53a07376d6fc80e0c071))
+
 ## [4.0.0](https://github.com/materya/eslint-config/compare/v3.0.1...v4.0.0) (2020-05-07)
 
 
