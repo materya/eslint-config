@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.0.3](https://github.com/materya/eslint-config/compare/v5.0.2...v5.0.3) (2020-10-05)
+
+
+### Bug Fixes
+
+* **deps:** upgrade vulnerabilities ([1c5d6d0](https://github.com/materya/eslint-config/commit/1c5d6d0aeca20255c39253995eff739e7afcabe5))
+
 ### [5.0.2](https://github.com/materya/eslint-config/compare/v5.0.1...v5.0.2) (2020-06-05)
 
 
