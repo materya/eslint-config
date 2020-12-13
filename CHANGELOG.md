@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/materya/eslint-config/compare/v5.0.3...v6.0.0) (2020-12-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* Adjust rules and prepare for naming convention inclusion
+
+### Features
+
+* Adjust rules and prepare for naming convention inclusion ([48b6366](https://github.com/materya/eslint-config/commit/48b6366ad18b6ace970dabc0b705dcf676deec6a))
+
+
+### Bug Fixes
+
+* update peerDependencies requirement ([861a1cc](https://github.com/materya/eslint-config/commit/861a1cc3c5150a84b83022a5ab98553807f0db60))
+
 ### [5.0.4](https://github.com/materya/eslint-config/compare/v5.0.3...v5.0.4) (2020-11-24)
 
 
