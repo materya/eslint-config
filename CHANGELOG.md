@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.0.4](https://github.com/materya/eslint-config/compare/v5.0.3...v5.0.4) (2020-11-24)
+
+
+### Bug Fixes
+
+* update peerDependencies requirement ([11b25b8](https://github.com/materya/eslint-config/commit/11b25b8cf74cdeaad63cc74b6337eec9266b4b02))
+
 ### [5.0.3](https://github.com/materya/eslint-config/compare/v5.0.2...v5.0.3) (2020-10-05)
 
 
