@@ -32,9 +32,16 @@ module.exports = {
       multiline: { delimiter: 'none' },
       singleline: { delimiter: 'semi', requireLast: false },
     }],
+
+    /* unused vars:
+     * - disable the base rule as it can report incorrect errors
+     * - add the option to explicitly annotated unused vars
+     */
+    'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error', {
-      varsIgnorePattern: '^_',
+      args: 'all',
       argsIgnorePattern: '^_',
+      varsIgnorePattern: '^_',
     }],
 
     // Incompatible rules with TS
