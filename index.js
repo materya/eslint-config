@@ -38,8 +38,8 @@ module.exports = {
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'no-unused-expressions': ['off', { allowShortCircuit: true }],
     'no-unused-vars': ['error', {
-      varsIgnorePattern: '^\\$',
-      argsIgnorePattern: '^\\$',
+      varsIgnorePattern: '^_',
+      argsIgnorePattern: '^_',
     }],
     'object-curly-newline': ['error', {
       ObjectExpression: { consistent: true },
