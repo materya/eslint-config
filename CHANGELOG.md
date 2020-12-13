@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.1.0](https://github.com/materya/eslint-config/compare/v6.0.0...v6.1.0) (2020-12-13)
+
+
+### Features
+
+* **typescript:** adjust no-unused-vars configuration ([a71ce55](https://github.com/materya/eslint-config/commit/a71ce55cdb1418a96e2e1858db30b2abe0a775d6))
+
 ## [6.0.0](https://github.com/materya/eslint-config/compare/v5.0.3...v6.0.0) (2020-12-13)
 
 
