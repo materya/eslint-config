@@ -50,6 +50,6 @@
   },
   "peerDependencies": {
     "eslint": ">= 6.x < 8",
-    "typescript": ">= 3.7.0 < 4"
+    "typescript": ">= 3.7.0 < 5"
   }
 }
