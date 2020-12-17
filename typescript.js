@@ -32,6 +32,8 @@ module.exports = {
       multiline: { delimiter: 'none' },
       singleline: { delimiter: 'semi', requireLast: false },
     }],
+    // Default as warning, force an error, that's a code smell.
+    '@typescript-eslint/no-non-null-assertion': 'error',
 
     /* unused vars:
      * - disable the base rule as it can report incorrect errors
@@ -43,6 +45,62 @@ module.exports = {
       argsIgnorePattern: '^_',
       varsIgnorePattern: '^_',
     }],
+
+    /**
+     * Naming convention rules:
+     *
+     * - default to `strictCamelCase`.
+     * - mandatory prefixes for `boolean` types.
+     * - match `@typescript-eslint/no-unused-vars` rule for unused vars with
+     *   a leading underscore.
+     * - `StrictPascalCase` for `typeLike` declarations.
+     * - allow `snake_case` in destructuring.
+     */
+    camelcase: 'off',
+    '@typescript-eslint/naming-convention': ['error',
+      {
+        selector: 'default',
+        format: ['strictCamelCase'],
+        leadingUnderscore: 'forbid',
+        trailingUnderscore: 'forbid',
+      },
+
+      {
+        selector: ['variableLike', 'memberLike'],
+        types: ['boolean'],
+        format: ['PascalCase'],
+        prefix: ['is', 'has', 'should', 'flag'],
+        filter: {
+          regex: '_',
+          match: false,
+        },
+      },
+      {
+        selector: ['variableLike', 'memberLike'],
+        types: ['boolean'],
+        format: ['strictCamelCase'],
+        prefix: ['is_', 'has_', 'should_', 'flag_'],
+      },
+
+      {
+        selector: ['variable', 'parameter'],
+        format: ['strictCamelCase'],
+        modifiers: ['unused'],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'forbid',
+      },
+
+      {
+        selector: 'typeLike',
+        format: ['StrictPascalCase'],
+      },
+
+      {
+        selector: 'variable',
+        modifiers: ['destructured'],
+        format: ['strictCamelCase', 'snake_case'],
+      },
+    ],
 
     // Incompatible rules with TS
     'import/named': 'off',

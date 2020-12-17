@@ -33,7 +33,7 @@ module.exports = {
       ignoreUrls: true,
       ignoreRegExpLiterals: true,
       ignoreStrings: true,
-      ignoreTemplateLiterals: false,
+      ignoreTemplateLiterals: true,
     }],
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'no-unused-expressions': ['off', { allowShortCircuit: true }],
