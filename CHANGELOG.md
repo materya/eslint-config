@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0](https://github.com/materya/eslint-config/compare/v6.1.0...v7.0.0) (2020-12-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* Enforce fine graind naming convention
+
+### Features
+
+* Enforce fine graind naming convention ([e76261b](https://github.com/materya/eslint-config/commit/e76261b79e05ff0d130933f986fc947828f4481e))
+
 ## [6.1.0](https://github.com/materya/eslint-config/compare/v6.0.0...v6.1.0) (2020-12-13)
 
 
