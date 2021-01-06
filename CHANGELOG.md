@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.0.1](https://github.com/materya/eslint-config/compare/v7.0.0...v7.0.1) (2021-01-06)
+
+
+### Bug Fixes
+
+* **typescript:** switch `no-shadow` rule to a specific ts one ([0a7843e](https://github.com/materya/eslint-config/commit/0a7843ea1edf46d8dd02914c166984f60a8fcd00))
+
 ## [7.0.0](https://github.com/materya/eslint-config/compare/v6.1.0...v7.0.0) (2020-12-17)
 
 
