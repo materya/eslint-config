@@ -46,6 +46,10 @@ module.exports = {
       varsIgnorePattern: '^_',
     }],
 
+    // incompatible no-shadow rule with ts, replace with a specific ts one
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
+
     /**
      * Naming convention rules:
      *
