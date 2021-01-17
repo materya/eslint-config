@@ -15,6 +15,18 @@ module.exports = {
     {
       files: ['*.ts'],
       rules: {
+        // Disable js rules in favor of specific TS ones
+        camelcase: 'off',
+        'no-shadow': 'off',
+        'no-underscore-dangle': 'off',
+        'no-unused-vars': 'off',
+
+        // Incompatible rules with TS
+        'import/named': 'off',
+        'jsdoc/require-param-type': 'off',
+        'jsdoc/require-returns-type': 'off',
+
+        // Enforce return type
         '@typescript-eslint/explicit-function-return-type': ['error'],
       },
     },
@@ -27,19 +39,25 @@ module.exports = {
   rules: {
     // Disable rules for a mixed js/ts codebase - see `overrides` parameter
     '@typescript-eslint/explicit-function-return-type': 'off',
-    // Common rules
+
+    // Simplify notation, removing useless delimiter
     '@typescript-eslint/member-delimiter-style': ['error', {
       multiline: { delimiter: 'none' },
       singleline: { delimiter: 'semi', requireLast: false },
     }],
-    // Default as warning, force an error, that's a code smell.
+
+    // Enforce no-explicit-any as an error
+    '@typescript-eslint/no-explicit-any': ['error', {
+      fixToUnknown: false,
+      ignoreRestArgs: false,
+    }],
+
+    // By default a warning. That's a code smell, forcing an error instead.
     '@typescript-eslint/no-non-null-assertion': 'error',
 
     /* unused vars:
-     * - disable the base rule as it can report incorrect errors
      * - add the option to explicitly annotated unused vars
      */
-    'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error', {
       args: 'all',
       argsIgnorePattern: '^_',
@@ -47,7 +65,6 @@ module.exports = {
     }],
 
     // incompatible no-shadow rule with ts, replace with a specific ts one
-    'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
 
     /**
@@ -58,57 +75,59 @@ module.exports = {
      * - match `@typescript-eslint/no-unused-vars` rule for unused vars with
      *   a leading underscore.
      * - `StrictPascalCase` for `typeLike` declarations.
-     * - allow `snake_case` in destructuring.
      */
-    camelcase: 'off',
     '@typescript-eslint/naming-convention': ['error',
       {
-        selector: 'default',
         format: ['strictCamelCase'],
         leadingUnderscore: 'forbid',
+        selector: 'default',
         trailingUnderscore: 'forbid',
       },
 
+      // Boolean specific naming
       {
-        selector: ['variableLike', 'memberLike'],
-        types: ['boolean'],
+        // filter: {
+        //   regex: '_',
+        //   match: false,
+        // },
         format: ['PascalCase'],
-        prefix: ['is', 'has', 'should', 'flag'],
-        filter: {
-          regex: '_',
-          match: false,
-        },
-      },
-      {
+        prefix: ['is', 'has', 'should', 'flag', 'does'],
         selector: ['variableLike', 'memberLike'],
         types: ['boolean'],
-        format: ['strictCamelCase'],
-        prefix: ['is_', 'has_', 'should_', 'flag_'],
       },
+      // {
+      //   format: ['strictCamelCase'],
+      //   prefix: ['is_', 'has_', 'should_', 'flag_', 'does_'],
+      //   selector: ['variableLike', 'memberLike'],
+      //   types: ['boolean'],
+      // },
 
+      // Match unused vars rule with leading underscore allowed
       {
-        selector: ['variable', 'parameter'],
         format: ['strictCamelCase'],
-        modifiers: ['unused'],
         leadingUnderscore: 'allow',
+        modifiers: ['unused'],
+        selector: ['variable', 'parameter'],
         trailingUnderscore: 'forbid',
       },
 
+      /**
+       * Special members convention as PascalCase
+       */
       {
-        selector: 'typeLike',
         format: ['StrictPascalCase'],
+        selector: ['enumMember', 'typeLike'],
       },
 
-      {
-        selector: 'variable',
-        modifiers: ['destructured'],
-        format: ['strictCamelCase', 'snake_case'],
-      },
+      /**
+       * Allow snake_case on destructuring
+       */
+      // {
+      //   format: ['strictCamelCase', 'snake_case'],
+      //   modifiers: ['destructured'],
+      //   selector: 'variable',
+      // },
     ],
 
-    // Incompatible rules with TS
-    'import/named': 'off',
-    'jsdoc/require-param-type': 'off',
-    'jsdoc/require-returns-type': 'off',
   },
 }
