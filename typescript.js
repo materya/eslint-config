@@ -71,7 +71,6 @@ module.exports = {
      * Naming convention rules:
      *
      * - default to `strictCamelCase`.
-     * - mandatory prefixes for `boolean` types.
      * - match `@typescript-eslint/no-unused-vars` rule for unused vars with
      *   a leading underscore.
      * - `StrictPascalCase` for `typeLike` declarations.
@@ -83,24 +82,6 @@ module.exports = {
         selector: 'default',
         trailingUnderscore: 'forbid',
       },
-
-      // Boolean specific naming
-      {
-        // filter: {
-        //   regex: '_',
-        //   match: false,
-        // },
-        format: ['PascalCase'],
-        prefix: ['is', 'has', 'should', 'flag', 'does'],
-        selector: ['variableLike', 'memberLike'],
-        types: ['boolean'],
-      },
-      // {
-      //   format: ['strictCamelCase'],
-      //   prefix: ['is_', 'has_', 'should_', 'flag_', 'does_'],
-      //   selector: ['variableLike', 'memberLike'],
-      //   types: ['boolean'],
-      // },
 
       // Match unused vars rule with leading underscore allowed
       {
