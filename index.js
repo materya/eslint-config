@@ -45,6 +45,7 @@ module.exports = {
       ObjectExpression: { consistent: true },
     }],
     semi: ['error', 'never'],
+    'semi-style': ['error', 'first'],
     'space-before-function-paren': ['error', 'always'],
 
     // plugin:import
