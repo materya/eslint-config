@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.0.0](https://github.com/materya/eslint-config/compare/v7.1.2...v8.0.0) (2021-12-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade to ESLint 8
+
+### Features
+
+* upgrade to ESLint 8 ([1093060](https://github.com/materya/eslint-config/commit/109306071d60c1f02e96b5f7fb31cdd10930c26e))
+
 ### [7.1.2](https://github.com/materya/eslint-config/compare/v7.1.1...v7.1.2) (2021-11-15)
 
 ### [7.1.1](https://github.com/materya/eslint-config/compare/v7.1.0...v7.1.1) (2021-02-05)
