@@ -9,7 +9,6 @@ module.exports = {
     'airbnb-base',
     'plugin:import/errors',
     'plugin:import/warnings',
-    'plugin:jsdoc/recommended',
   ],
   parserOptions: {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
@@ -17,7 +16,6 @@ module.exports = {
   },
   plugins: [
     'import',
-    'jsdoc',
   ],
   root: true,
   rules: {

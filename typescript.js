@@ -23,8 +23,6 @@ module.exports = {
 
         // Incompatible rules with TS
         'import/named': 'off',
-        'jsdoc/require-param-type': 'off',
-        'jsdoc/require-returns-type': 'off',
 
         // Enforce return type
         '@typescript-eslint/explicit-function-return-type': ['error'],
@@ -32,9 +30,6 @@ module.exports = {
     },
   ],
   settings: {
-    jsdoc: {
-      mode: 'typescript',
-    },
   },
   rules: {
     // Disable rules for a mixed js/ts codebase - see `overrides` parameter
