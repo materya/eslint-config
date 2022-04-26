@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.0.0](https://github.com/materya/eslint-config/compare/v8.0.0...v9.0.0) (2022-04-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove jsdoc plugin
+
+### Features
+
+* remove jsdoc plugin ([e88fee0](https://github.com/materya/eslint-config/commit/e88fee0ab24a6ac701768a59762a6244960fb84c))
+
 ## [8.0.0](https://github.com/materya/eslint-config/compare/v7.1.2...v8.0.0) (2021-12-02)
 
 
