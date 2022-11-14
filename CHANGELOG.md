@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [9.0.2](https://github.com/materya/eslint-config/compare/v9.0.1...v9.0.2) (2022-11-14)
+
+
+### Bug Fixes
+
+* **ts:** override `import/resolver` extensions ([16f0445](https://github.com/materya/eslint-config/commit/16f044508f56c4074baabd7d7c89dd8c8d5229b3))
+
 ### [9.0.1](https://github.com/materya/eslint-config/compare/v9.0.0...v9.0.1) (2022-10-18)
 
 ## [9.0.0](https://github.com/materya/eslint-config/compare/v8.0.0...v9.0.0) (2022-04-26)
