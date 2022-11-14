@@ -27,6 +27,13 @@ module.exports = {
         // Enforce return type
         '@typescript-eslint/explicit-function-return-type': ['error'],
       },
+      settings: {
+        'import/resolver': {
+          node: {
+            extensions: ['.js', '.mjs', '.ts', '.d.ts'],
+          },
+        },
+      },
     },
   ],
   settings: {
