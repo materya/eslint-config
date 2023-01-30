@@ -43,7 +43,7 @@
     "eslint-plugin-import": "2.26.0"
   },
   "devDependencies": {
-    "eslint": "8.25.0",
+    "eslint": "8.33.0",
     "standard-version": "9.5.0"
   },
   "peerDependencies": {
