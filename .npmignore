@@ -1,16 +1,15 @@
-*.log
-.editorconfig
-.env*
-.eslintrc.js
-.github
-.gitattributes
-.mocharc.js
-.nycrc
-.nyc_output
-.vscode
-Makefile
-coverage
-node_modules
-src
-test*
-tsconfig.*
+# Exclude All
+/*
+
+# Explicit includes
+!CHANGELOG.md
+!LICENSE
+!index.js
+!package.json
+!package-lock.json
+!pulumi.js
+!README.md
+!typescript.js
+
+# Artifacts
+.DS_Store
